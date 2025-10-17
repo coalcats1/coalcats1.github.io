@@ -19,7 +19,7 @@ its destonation. Some of the other things this layer is responsible for are:
 - IP
 - Routers
 fun right.
-## Link/Network Access Laayer
+## Link/Network Access Layer
 The link layer connects you to routers by sending electrical pulses to them
 some protocols this layer has are:
 - LTE
