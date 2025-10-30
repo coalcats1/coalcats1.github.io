@@ -1,8 +1,8 @@
 Hello 
 
-![image](/../images/digi art)
+! [image](/../images/digi art)
 
-![online image](/../images/True digi art)
+! [online image](/../images/True digi art)
 
 0A
 
