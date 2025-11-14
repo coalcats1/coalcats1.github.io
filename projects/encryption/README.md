@@ -78,7 +78,7 @@ Well the diffrence is that symetric encryption requires a shared seceret that bo
 
 - Why is it important that this protocol uses a new key for each message?
 
-because if you cracked the ceaser cypher the fisrt time then you can read everything. so we had to mix it up using math, but if they figured ou twhat math we were using they could still anticipate what were going to use to encrypt the messege.
+because if you cracked the ceaser cypher the fisrt time then you can read everything. so we had to mix it up using math, but if they figured out what math we were using they could still anticipate what were going to use to encrypt the messege.
 
 - Why is it important that you never share your secret key?
 
