@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>MyIndex</title>
+
+    <!-- FAVICONS - make sure these files live in /faviconer/ or move them to / -->
+    <link rel="shortcut icon" href="/faviconer/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/faviconer/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/faviconer/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/faviconer/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/faviconer/favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/faviconer/apple-touch-icon.png">
+    <link rel="manifest" href="/faviconer/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+    <style>
+    body {
+        background-color: green;
+    }
+    h1, p, h3 {
+        color: pink;
+    }
+    </style>
+
+    <!-- Scripts -->
+    <!-- Use an absolute path if the js folder is at the site root. Use defer so the script runs after parsing -->
+    <script src="/js/validate.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to my website!</h1>
+    <p>I will use my website however I wish. I will be updating this site almost every other day;
+    Improving it each time, and have faith in me because <q>I haven't thought it out but it seems smart</q> - Henry.</p>
+
+    <h3>other stuff</h3>
+    <p>Other stuff</p>
+
+    <ol>
+        <li><a href="/practice/schedule.html" target="_blank">schedule</a></li>
+        <li><a href="/practice/terminal.html" target="_blank">Really bad guide</a></li>
+        <li><a href="/practice/recipes/index.html" target="_blank">Recipes</a></li>
+        <li><a href="/projects/recipes/index.html" target="_blank">Recipes Project</a></li>
+        <li><a href="/practice/network_notes.html">notes</a></li>
+    </ol>
+
+    <img src="/images/Cat.jpg"
+         alt="Cat"
+         srcset="/images/Cat-small.jpg 194w,
+                 /images/Cat-medium.jpg 360w,
+                 /images/Cat-large.jpg 400w"
+         sizes="(max-width:480px) 95vw,
+                (max-width:800px) 45vw,
+                30vw">
+    <!-- https://en.wikipedia.org/wiki/Tabby_cat  so wikipida, no artist credited -->
+</body>
+</html>
