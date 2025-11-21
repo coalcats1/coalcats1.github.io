@@ -1,7 +1,6 @@
-<style>                                                                                               
-table, th, tr, td{                                                                                    
-        border: 1px solid black;                                                                      
-        border-coplapse: collapse;                                                                    
+                                                                                             
+table, th, tr, td{                                                                                            border: 1px solid  black;                                                                      
+        border-collapse: collapse;                                                                    
 }                                                                                                     
 body{                                                                                                 
         background-color: rgb(100,75,200);                                                            
@@ -11,12 +10,12 @@ h1{
 	background-color: rgb((190,90,200)
 }
 #info{
-	background-color= rgb(20,70,120);
+	background-color: rgb(20,70,120);
 }
 .highlight{
-	color= rgb(70,130,170);
+	color: rgb(70,130,170);
 }
 #showcase_animals{
-	background-color: rgb(00,120,125)
+	background-color: rgb(00,120,125);
 }
-</style>       
+       
