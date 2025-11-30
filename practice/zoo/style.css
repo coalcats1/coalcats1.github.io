@@ -1,16 +1,22 @@
                                                                                              
-table, th, tr, td{                                                                                            border: 1px solid  black;                                                                      
+table, th, tr, td{           
+	border: 1px solid  black;                                                                      
         border-collapse: collapse;                                                                    
 }                                                                                                     
 body{                                                                                                 
         background-color: rgb(100,75,200);                                                            
         color: rgb(90,235,150);                                                                       
+	font-family: 'Helvetica','georgia', 'sarif';
 }                                                                                                     
 h1{
-	background-color: rgb((190,90,200)
+	background-color: rgb(190,90,200);
+	margin: 10px;
+	
 }
+
 #info{
 	background-color: rgb(20,70,120);
+        margin: 100px;	
 }
 .highlight{
 	color: rgb(70,130,170);
