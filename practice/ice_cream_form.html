@@ -1,17 +1,54 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 	<head>
 		<title>Who wants ice cream</title>
-		<script scr="../js/validate.js"></script>
+		<script src="../js/validate.js"></script>
+<style>
+#body{
+background-color: red;
+}
+#box{
+	box-sizing: border-box;
+	width: 600px;
+	height: 500px;
+	background-color: white;
+	border: 2px solid;
+	margin-left: 380px;
+	margin-top: 100px; 
+	padding-top: 5px;
+	font-size: 30px;
+	padding-left: 10px;
+}
+#submit{
+	margin-top: 50px;
+	margin-right: 1000px;
+}
+#name{
+	margin-right: 1300px;
+	margin-left: 130px;
+	transform: translateY(-38px) translateX(110px);
+}
+#phone{
+	margin-top: 10px;
+	margin-right: 500px;
+	transform: translateX(340px) translateY(-39px);
+}
+#dropdown{
+	margin-right: 600px;
+	transform: translateX(450px) translateY(-35px);
+}
+
+</style>
 	</head>
-	<body>
+	<body id="body">
+		<div id="box">
 		<form action="https://httpbin.org/post" method="post">
 		What is you name?
-		<input type="text" name="yourname">
+		<input id="name" type="text" name="yourname">
 		What's your phone number?
-		<input type="text" name="Phone number">
+		<input id="phone" type="text" name="Phone number">
 		How many people are in your party?
-		<select name="amount">
+		<select id="dropdown" name="amount">
 			<option value="1">1</option>
 			<option value="2">2</option>
 			<option value="3">3</option>
@@ -21,7 +58,10 @@
 			<option value="7">7</option>
 			<option value="8">8</option>
 		</select>
-			<button type="submit">submit</button>
+		<input id="button" type="radio" name="pre-pay">
+		Would you like to Pre-Pay
+		<button id="submit" type="submit">submit</button>
 		</form>
+		</div>
 	</body>
 </html>
