@@ -45,21 +45,40 @@ body{
 	position: center;
 	transform: translateX(-20px) translateY(100px);
 
-	}
+}
+#fourth{
+	width: 300px;
+	aspect-ratio: 1;
+	background: #F8CA00;
+	clip-path: polygon(50% 0,
+    	calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+    	calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    	calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+    	calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)))
+   );
+   	position: center;
+	transform: translateY(-250px) translateX(-148px);
+
+}
+#fith{
+  height: 70px;
+  aspect-ratio: 1;
+  clip-path: polygon(50% 0,100% 50%,50% 100%,0 50%);
+  background: pink;
+  transform: translateX(-200px) translateY(230px)
+
+}
 </style>
 	</head>
 	<body>
 		<h1>this is a tree</h1>
 		<div id="container">
 			<div id="tree">
-				<div id="box">
-				</div>
-				<div id="second">
-				</div>
-				<div id="third">
-				</div>
-
-
+				<div id="box"></div>
+				<div id="second"></div>
+				<div id="third"></div>
+				<div id="fourth"></div>
+				<div id="fith"></div>	
 
 				
 			</div>
