@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Behold the holy grail!</title>
+
+<style>
+.grid {
+  display: grid;
+  height: 100vh;
+  grid:
+    'head  head head' 100px
+    'menu  main ori' 1fr
+    'foot  foot foot' 200px
+    /200px 1fr 200px;
+  gap: 10px;
+
+}
+#header{
+	grid-area:head;
+	background-color: seagreen;
+	text-align: center;
+	font-size: 24;
+	color: white;
+}
+#text{
+position: center;
+font-size: 48px;
+}
+#maine{
+	grid-area: main;
+	background-color: seagreen;
+}
+#texti{
+	position: center;
+	color: white;
+	font-size: white;
+transform: translateX(380px);
+}
+#lept{
+	color: white;
+	transform: translateX(400px);
+}
+#body{
+	background-color: violet;
+}
+#menu{
+	grid-area: menu;
+	background-color: seagreen;
+}
+#menui{
+	grid-area: ori;
+	background-color: seagreen;
+</style>
+	</head>
+	<body id="body">
+		<div class="grid">
+			<div id="header">
+				<p id="text">Greetings good knight </p>
+			</div>
+			<div id="maine">
+				<h3 id="lept">A Quest Hath Come!</h3>	
+				<p id="texti">Jolly good day fellow adventurer.</p>
+			</div>
+			<div id="menu">
+
+			</div>
+			<div id="menui">
+			</div>
+		</div>
+		</body>
+</html>
+
