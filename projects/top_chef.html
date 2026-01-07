@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>LiechtenFlights</title>
+<style>
+#grid{
+	display: grid;
+	height: 100vh;
+	grid:
+		'head head' 1fr
+		'side body' 3fr
+		'side footer' 1fr
+		/170px 1fr;
+
+}
+#hero{
+	grid-area: head;
+	background-color:blue;
+	color: white;
+text-align: center;
+text-decoration-line:underline; 
+text-decoration-style:wavy;
+font-size: 48px;
+}
+#side{
+	grid-area:side;
+	background-image: linear-gradient(seagreen,violet);
+}
+#pic{
+	transform: translateY-(380px)
+}
+
+
+
+</style>
+	</head>
+	<body>
+		<div id="grid">
+			<div id="hero">
+				Liechten Flights
+			</div>
+			<div id="side">
+			<img id="pic" src:"/images/Liecht.jpg" alt="Castle">
+			</div>
+		</div>
+	</body>
+</html>
+
