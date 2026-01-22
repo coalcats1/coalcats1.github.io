@@ -2,22 +2,43 @@
 <html lang="e">
 	<head>
 		<title>Cats</title>
+		<link rel="stylesheet" href="style.css">
 <style>
-.grid {
+.grid{
 	display: grid;
 	height: 100vh;
 	grid:
     	'sida  head  head head  sidb' 100px
     	'sida  main  main pict  sidb' 500px
     	'sida  foot  foot foot  sidb' 200px
-    	/150px 100px 100px 100px 150px;
-  	gap: 10px;
+    	/250px 1fr 1fr 1fr 250px;
 }
+#title{
+	grid-area: head;
+	background-color: seagreen;
+	color: red;
+	font-size: 50px;
+}
+#h{
+	transform: translateX(250px) translateY(-70px);
+}
+#topic{
+	grid-area:main;
+	background-color: purple;
+	color: pink;
+	font-size: 24px;
+}
+#t{
+	padding-right: 12px;
+	padding-left:12px;
+}
+	
 </style>
 	</head>
 	<body>
 		<div class="grid">
-		<div id="title"></div>
+			<div id="title"><h1 id="h">Cat Care</h1></div>
+			<div id="topic"> <p id="t">Cats are wonderful little creatures, but they can cause problems. You might be alergic or they could just keep you up all night. So, what should you do and how do you deal with them.</p> </div>
 		</div>
 	</body>
 </html>
