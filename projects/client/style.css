@@ -1,7 +1,30 @@
-.box{ 
-	height: 500px;
-	width: 1fr;
+.topic{ 
+	border-radius: 12px;
+	border-style: solid;
+	background-clip: padding-box;
 	flex-wrap:wrap;
-	border-width: 3px;
+	border-width: 3px gray;
 	border-color: gray;
+       	grid-area:main;
+       	background-color: purple;
+       	color: pink;
+       	font-size: 24px; 
+}
+.footer{
+	grid-area: foot;
+	background-color: blue;
+	color: red;
+	font-size: 24px;
+}
+body{
+	background-color:pink;
+}
+.sidb{
+	grid-area:sidb;
+	background-color: orange;
+	color: blue;
+	font-size: 24px;
+}
+.font{
+	font-family: TimesNewRoman, Times, serif;
 }

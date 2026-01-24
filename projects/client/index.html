@@ -11,7 +11,8 @@
     	'sida  head  head head  sidb' 100px
     	'sida  main  main pict  sidb' 500px
     	'sida  foot  foot foot  sidb' 200px
-    	/250px 1fr 1fr 1fr 250px;
+    	/225px 1fr 1fr 1fr 225px;
+	margin: -12px;
 }
 #title{
 	grid-area: head;
@@ -20,13 +21,7 @@
 	font-size: 50px;
 }
 #h{
-	transform: translateX(250px) translateY(-70px);
-}
-#topic{
-	grid-area:main;
-	background-color: purple;
-	color: pink;
-	font-size: 24px;
+	transform: translateX(350px) translateY(-70px);
 }
 #t{
 	padding-right: 12px;
@@ -38,11 +33,10 @@
 	<body>
 		<div class="grid">
 			<div id="title"><h1 id="h">Title</h1></div>
-			<div id="topic"> 
-				<div class="box">
-				<p id="t"></p> 
-				</div>
-			</div>
+			<div class="topic"><p id="t"></p></div>
+			<div class="sida"></div>
+			<div class="sidb"></div>
+			<div class="footer"></div>
 		</div>
 	</body>
 </html>
