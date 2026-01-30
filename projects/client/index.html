@@ -1,42 +1,30 @@
 <!DOCTYPE html>
-<html lang="e">
+<html lang="en">
 	<head>
-		<title>Cats</title>
-		<link rel="stylesheet" href="style.css">
+		<title>Main</title>
 <style>
+#body{
+	background-image: url("/images/Trash.PNG");
+	Background-color: pink;
+}
 .grid{
 	display: grid;
 	height: 100vh;
 	grid:
-    	'sida  head  head head  sidb' 100px
-    	'sida  main  main pict  sidb' 500px
-    	'sida  foot  foot foot  sidb' 200px
-    	/225px 1fr 1fr 1fr 225px;
+	'main main side'100px
+	'main main filler' 500px
+	'floor floor empty' 200px
+	/225px 1fr 225px;
 	margin: -12px;
 }
-#title{
-	grid-area: head;
-	background-color: seagreen;
-	color: red;
-	font-size: 50px;
-}
-#h{
-	transform: translateX(350px) translateY(-70px);
-}
-#t{
-	padding-right: 12px;
-	padding-left:12px;
-}
-	
 </style>
 	</head>
-	<body>
+	<body id="body">
 		<div class="grid">
-			<div id="title"><h1 id="h">Title</h1></div>
-			<div class="topic"><p id="t"></p></div>
-			<div class="sida"></div>
-			<div class="sidb"></div>
-			<div class="footer"></div>
+
+
+
 		</div>
 	</body>
 </html>
+
