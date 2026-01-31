@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Main</title>
+<style>
+#body{
+	background-image: url("/images/Trash.PNG");
+	Background-color: pink;
+}
+.grid{
+	display: grid;
+	height: 100vh;
+	grid:
+	'main main main'100px
+	'dif dif dif' 250px
+	'floor floor empty' 1fr
+	/225px 1fr 2fr;
+	margin: -12px;
+}
+</style>
+	</head>
+	<body id="body">
+		<div class="grid">
+
+
+
+		</div>
+	</body>
+</html>
+

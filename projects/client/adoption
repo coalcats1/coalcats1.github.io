@@ -4,6 +4,9 @@
 		<title>Cats</title>
 		<link rel="stylesheet" href="style.css">
 <style>
+body{
+	background-image: url(/images/Kittens.PNG);
+}
 .grid{
 	display: grid;
 	height: 100vh;
