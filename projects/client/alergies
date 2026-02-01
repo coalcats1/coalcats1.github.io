@@ -4,8 +4,9 @@
 		<title>Main</title>
 <style>
 #body{
-	background-image: url("/images/Trash.PNG");
+	background-image: url("images/Trash.PNG");
 	Background-color: pink;
+	background-size: 100%;
 }
 .grid{
 	display: grid;

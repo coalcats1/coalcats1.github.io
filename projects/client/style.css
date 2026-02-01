@@ -21,7 +21,6 @@ body{
 }
 .sidb{
 	grid-area:sidb;
-	background-color: orange;
 	color: blue;
 	font-size: 24px;
 }

@@ -5,15 +5,16 @@
 		<link rel="stylesheet" href="style.css">
 <style>
 body{
-	background-image: url(/images/Kittens.PNG);
+	background-image: url(images/Kittens.PNG);
+	background-size: 100%;
 }
 .grid{
 	display: grid;
 	height: 100vh;
 	grid:
-    	'sida  head  head head  sidb' 100px
+    	'sida  head  head pict  sidb' 100px
     	'sida  main  main pict  sidb' 500px
-    	'sida  foot  foot foot  sidb' 200px
+    	'sida  foot  foot pict  sidb' 200px
     	/225px 1fr 1fr 1fr 225px;
 	margin: -12px;
 }
@@ -24,7 +25,7 @@ body{
 	font-size: 50px;
 }
 #h{
-	transform: translateX(350px) translateY(-70px);
+	transform: translateX(210px) translateY(-70px);
 }
 #t{
 	padding-right: 12px;
