@@ -45,7 +45,7 @@ ctx.ellipse(
 	2*Math.PI
 );
 ctx.fill();
-//eye whites
+//eye whites 2
 ctx.fillStyle = "white";
 ctx.beginPath();
 ctx.ellipse(
@@ -67,7 +67,7 @@ ctx.ellipse(
 	2*Math.PI
 );
 ctx.fill();
-//irs
+//irs 2
 ctx.fillStyle = "seagreen";
 ctx.strokeStyle = "#a0d6b4";
 ctx.lineWidth="4";
@@ -79,18 +79,68 @@ ctx.beginPath();
 ctx.arc(475,305,16,0,2*Math.PI);                                                                      
 ctx.fill();
 ctx.stroke(); 
-//pupile
+//pupile 4
 ctx.fillStyle = "black";
 ctx.beginPath();
-ctx.arc(325,305,6,0,2*Math.PI);
+ctx.arc(325,305,10,0,2*Math.PI);
 ctx.fill();
 ctx.beginPath();
-ctx.arc(475,305,6,0,2*Math.PI);
+ctx.arc(475,305,10,0,2*Math.PI);
 ctx.fill();
-//smile
-
-//nose
-
+ctx.fillStyle = "white";
+ctx.beginPath();
+ctx.ellipse(
+	478,301,
+	6,
+	2,
+	Math.PI/6,
+	0,
+	2*Math.PI
+);
+ctx.fill();
+ctx.beginPath();
+ctx.ellipse(
+	328,301,
+	6,
+	2,
+	Math.PI/6,
+	0,
+	2*Math.PI
+);
+ctx.fill();
+//smile 1
+ctx.beginPath();
+ctx.ellipse(
+	400,400,
+	60,
+	25,
+	0,
+	2*Math.PI,
+	Math.PI
+);
+ctx.fill();
+//nose 2
+ctx.fillStyle = "black";
+ctx.beginPath();
+ctx.ellipse(
+	420,325,
+	29,
+	1,
+	4*Math.PI/9,
+	0,
+	2*Math.PI
+);
+ctx.fill();
+ctx.beginPath();
+ctx.ellipse(
+	411,352,
+	15,
+	1,
+	0,
+	0,
+	2*Math.PI
+);
+ctx.fill();
 //arm laft
 
 //arm right
