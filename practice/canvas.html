@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="e">
+	<head>
+		<title>Canvas</title>
+<style>
+#canvas{
+	border: black 2px solid;
+}
+
+</style>
+	</head>
+	<body>
+		<h1>Canvas</h1>
+		<canvas id="canvas" width="800" height="800">
+		<script>
+		const canvas = document.getElementById("canvas");
+		const ctx = canvas.getContext("2d");
+
+		ctx.fillStyle = "blue";
+		ctx.fillRect(0,0,800,800);
+		ctx.fillStyle="black";
+		ctx.strokeStyle="green"
+		ctx.lineWidth=10;
+		ctx.beginPath();
+		ctx.arc(400,400,100,0,Math.PI);
+		ctx.fill();
+		ctx.stroke();
+		ctx.fillStyle = "green";
+		ctx.fillRect(100,100,200,300);
+		ctx.fillStyle = "red";
+		ctx.fillRect(325, 50, 150, 150);
+		ctx.fillStyle = "purple";
+		ctx.beginPath();
+		ctx.ellipse(
+			400,600,
+			300,
+			100,
+			Math.PI/4,
+			0,
+			2*Math.PI
+			);
+		ctx.fill();
+		ctx.beginPath();
+		ctx.moveTo(700,10);
+		ctx.lineTo(790,150);
+		ctx.lineTo(610,150);
+		ctx.stroke();
+		ctx.fill();
+		</script>
+		</canvas>
+	</body>
+</html>
