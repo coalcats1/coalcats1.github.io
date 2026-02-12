@@ -15,37 +15,18 @@
 		<script>
 		const canvas = document.getElementById("canvas");
 		const ctx = canvas.getContext("2d");
-
-		ctx.fillStyle = "blue";
-		ctx.fillRect(0,0,800,800);
-		ctx.fillStyle="black";
-		ctx.strokeStyle="green"
-		ctx.lineWidth=10;
-		ctx.beginPath();
-		ctx.arc(400,400,100,0,Math.PI);
-		ctx.fill();
-		ctx.stroke();
-		ctx.fillStyle = "green";
-		ctx.fillRect(100,100,200,300);
 		ctx.fillStyle = "red";
-		ctx.fillRect(325, 50, 150, 150);
-		ctx.fillStyle = "purple";
 		ctx.beginPath();
-		ctx.ellipse(
-			400,600,
-			300,
-			100,
-			Math.PI/4,
-			0,
-			2*Math.PI
-			);
+		ctx.moveTo(400,425);
+		ctx.lineTo(500,300);
+		ctx.lineTo(300,300);
 		ctx.fill();
 		ctx.beginPath();
-		ctx.moveTo(700,10);
-		ctx.lineTo(790,150);
-		ctx.lineTo(610,150);
-		ctx.stroke();
+		ctx.arc(450,300,50,Math.PI,0);
 		ctx.fill();
+                ctx.beginPath();
+                ctx.arc(350,300,50,Math.PI,0);
+                ctx.fill();
 		</script>
 		</canvas>
 	</body>
