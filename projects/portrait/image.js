@@ -15,7 +15,7 @@ ctx.ellipse(
 	2*Math.PI//end
 );
 ctx.fill();
-//hair 2
+//hair 5
 ctx.fillStyle = "#aa660e";
 ctx.beginPath();
 ctx.arc(400,275,150,Math.PI,11*Math.PI/6);
@@ -23,6 +23,54 @@ ctx.fill();
 ctx.beginPath();
 ctx.arc(400,275,150,3*Math.PI/2,2*Math.PI);
 ctx.fill();
+ctx.fillStyle = "#c2830c";
+ctx.beginPath();
+ctx.ellipse(
+	370,200,
+	60,
+	2,
+	23*Math.PI/12,
+	0,
+	2*Math.PI
+);
+ctx.fill();
+ctx.beginPath();
+ctx.ellipse(
+        370,210,
+        60,
+        2,
+        23*Math.PI/12,
+        0,
+        2*Math.PI
+);
+ctx.fill();
+ctx.beginPath();
+ctx.ellipse(
+        425,227,
+        60,
+        5,
+        23*Math.PI/12,
+        0,
+        Math.PI
+);
+ctx.fill();
+ctx.beginPath();
+ctx.ellipse(
+	515,225,
+	30,
+	2,
+	-5*Math.PI/6,
+	0,
+	2*Math.PI
+);
+ctx.fill();
+ctx.fillStyle = "#aa660e";
+ctx.strokeStyle ="#c2830c";
+ctx.lineWidth = 4;
+ctx.beginPath();
+ctx.arc(465,211,20,0,5*Math.PI/6);
+ctx.fill();
+ctx.stroke();
 //ears 2 
 ctx.fillStyle = "#ffe2c6";
 ctx.beginPath();
@@ -141,6 +189,12 @@ ctx.ellipse(
 	2*Math.PI
 );
 ctx.fill();
+//neck 1
+ctx.fillStyle = "#ffe2c6";
+ctx.fillRect(360,450,80,70);
+
+//shirt
+
 //arm laft
 
 //arm right
@@ -148,10 +202,6 @@ ctx.fill();
 //hand left 
 
 //hand right
-
-//shirt
-
-//neck
 
 //10 fingers
 
