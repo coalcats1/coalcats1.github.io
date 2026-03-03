@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Animation</title>
+	</head>
+	<body>
+		<canvas id="a" width=1300 height=800></canvas>
+		<script>
+		const canvas = document.getElementById("a");
+		const ctx = canvas.getContext("2d");
+
+		let x = 0;
+		let y = -1;
+		let directionX = 3;
+		let directionY = 4;
+		let a = 0;
+		let b = 70;
+		let c = 140;
+
+	function animate(){
+		x = x + directionX;
+    		y = y + directionY;
+    		console.log(x);
+    		ctx.clearRect(0,0,1300,800);
+    		ctx.fillStyle = "grey";
+    		ctx.fillRect(x,y,110,110);
+    		ctx.fill();
+		ctx.fillStyle = `rgb(${a},${b},${c})`;
+    		ctx.fillRect(x+10,y+10,100,100);
+    		ctx.fill();
+    
+    		if(x >= 1190 || x <= 0){
+        	directionX = directionX * -1;
+		a=Math.random()*255+0;
+		b=Math.random()*255+0;
+		c=Math.random()*255+0;
+    	}
+    		if(y >= 690 || y <= 0){
+        	directionY = directionY * -1;
+		a=Math.random()*255+0;
+		b=Math.random()*255+0;
+		c=Math.random()*255+0;
+    	}
+    		requestAnimationFrame(animate);
+}
+		animate();
+		</script>
+	</body>
+</html>
+
