@@ -30,7 +30,10 @@ function Void() {
 function cult_meeting() {
     clear();
     print("\nYou are in cult meeting!");
-    print("\nWhere do you want to go next? Say one of these choices:" +
+    print("\nHooded figures huttle around a central ulter. One of them gestures at you and says,");
+    print("\nHey were you been, were doing it! Were gonna contact the them!");
+    print("\nYou stare blankly at the hooded face hidden in shadows.");
+    print("\nYou have the urge to move, something is eating at you. Where do you want to go next? Say one of these choices:" +
         "\n\tVoid");
     
     function processInput(input){
