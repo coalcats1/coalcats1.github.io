@@ -17,10 +17,7 @@
         </div>
     </div>
     <script src="game_helpers.js"></script>
-    <script src="chris_needs_coffee.js"></script>
-    <!--
     <script src="game.js"></script>
-    -->
     <script>
     // Start the game when the window loads
     window.onload = function() {
