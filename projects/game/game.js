@@ -8,9 +8,26 @@ setTimeout(() => {
 	clear();
 	print("\nYou Have Become");
 	gameActive = false;
-}, 7 * 60 * 1000)  
+}, 7 * 60 * 1000);  
+setTimeout(() => {
+	room1();
+},3*60*1000);
 
 //Make one function for each location
+function room1(){
+	clear();
+        print("\nhurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt");
+        print("Press Enter");
+	function processInput(input){
+		if(input.toLowerCase() === ""){
+			Void();
+		}else{
+			Void();
+		}
+	}
+	waitForInput(processInput);
+}
+
 function Void() {
     clear();
     print("\nYou are in the Void!");
