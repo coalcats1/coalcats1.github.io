@@ -32,13 +32,15 @@ function Void() {
     clear();
     print("\nYou are in the Void!");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tcult meeting"+"\n\tStorm");
+        "\n\tcult meeting"+"\n\tStorm"+"\n\tShip");
     
     function processInput(input){
         if (input.toLowerCase() === "cult meeting") {
             cult_meeting();
         }else if(input.toLowerCase() === "storm"){
                 storm();
+	}else if(input.toLowerCase() === "ship"){
+		Ship();
 	}else{
             stayHere();
             waitThenCall(Void);
@@ -160,7 +162,7 @@ function Water(){
             Void();
         }
         waitForInput(processInput);
-    }, 20 * 1000);
+    }, 10 * 1000);
 }
 
 //finally, make sure you customize this to tell it what should happen at the
