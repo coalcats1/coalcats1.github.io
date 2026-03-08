@@ -126,6 +126,42 @@ function sorrow(){
 	}
 	waitForInput(processInput);
 }
+function Ship(){
+	clear();
+	print("\nYou are in the haul of a ship, the planks creek as the boat rocks gently in the waves.");
+	print("\nYou open a familiar door, it swings open revealing a neat desk.");
+	print("\nYou think that one of the papers is important, there is just something about it.");
+	print("\nAs you reach for it you feel an impending dread, fear takes over and turns inot panic. You flee the room.");
+	print("\nYou see a shard of glass with maybe something swimming behind it. Do you enter? Your options are:"+
+		"\n\tVoid"+"\n\tWater");
+	function processInput(input){
+		if(input.toLowerCase() === "void"){
+			Void();
+		}else if(input.toLowerCase() === "water"){
+			Water();
+		}else{
+			stayHere();
+			waitThenCall(Ship);
+		}
+	}
+	waitForInput(processInput);
+}
+function Water(){
+    clear();
+    print("\nYour underwater, deep underwater, you strugle to adapt to the pressure.");
+    print("\nThe sudden lack of air makes it difficult for you to breath. You franticly try to swim to an out of reach surface.");
+
+    setTimeout(() => {
+        clear();
+        print("\nYou lose consciousness.");
+        print("\nPress enter");
+
+        function processInput(input){
+            Void();
+        }
+        waitForInput(processInput);
+    }, 20 * 1000);
+}
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
