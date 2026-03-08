@@ -12,12 +12,26 @@ setTimeout(() => {
 setTimeout(() => {
 	room1();
 },3*60*1000);
-
+setTimeout(() => {
+	room2();
+},10*1000);
 //Make one function for each location
 function room1(){
 	clear();
         print("\nhurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt hurt");
-        print("Press Enter");
+        print("\nPress Enter");
+	function processInput(input){
+		if(input.toLowerCase() === ""){
+			Void();
+		}else{
+			Void();
+		}
+	}
+	waitForInput(processInput);
+}
+function room2(){
+	clear();
+	print("\nRember");
 	function processInput(input){
 		if(input.toLowerCase() === ""){
 			Void();
