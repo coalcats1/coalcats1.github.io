@@ -12,7 +12,7 @@ setTimeout(() => {
 }, 10 * 60 * 1000);
 setTimeout(() => {
 	beyond();
-}, 5 * 1000);  
+}, 5 * 1000); /* ment to be 5 mins*/ 
 setTimeout(() => {
 	room1();
 },3*60*1000);
