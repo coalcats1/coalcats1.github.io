@@ -14,7 +14,7 @@ setTimeout(() => {
 },3*60*1000);
 setTimeout(() => {
 	room2();
-},10*1000);
+},4*60*1000);
 //Make one function for each location
 function room1(){
 	clear();
