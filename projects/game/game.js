@@ -2,8 +2,18 @@ let gameActive = true; //this variable is required.
                        //to stop the game, set it to false.
 
 //Declare your other global variables here
-
+let time = 0;
+let timeoutIds = [];
 //If you need, add any "helper" functions here
+function timer(){
+	timeoutIds.push(setTimeout(() => {
+	room3();
+        },12*1000));
+}
+
+
+
+
 setTimeout(() => {
         clear();
         print("\nGame Over");
@@ -12,7 +22,7 @@ setTimeout(() => {
 }, 10 * 60 * 1000);
 setTimeout(() => {
 	beyond();
-}, 5 * 1000); /* ment to be 5 mins*/ 
+}, 5 * 60 * 1000); 
 setTimeout(() => {
 	room1();
 },3*60*1000);
@@ -20,6 +30,7 @@ setTimeout(() => {
 	room2();
 },4*60*1000);
 //Make one function for each location
+
 function room3(){
 	clear();
 	print("\nYou aren't");
@@ -28,10 +39,11 @@ function room3(){
 		start();
 	},6*1000);
 }
+
 function beyond(){
 	clear();
 	print("\nYour in a wooden room, an old room, behind you is a door, beyond the door is a forest.");
-	print("\nVoice: You are something, soon you won't be.");
+	print("\nVoice: You are something, then you will be nothing.");
 	print("\nYou have two options,"
 		+"\n\tRun"+"\n\tDon't Run");
 	function processInput(input){
@@ -77,7 +89,7 @@ function Void() {
     print("\nYou are in the Void!");
     print("\nYou have no idea where you are. the 'room' is filled with a white void. Shards of stained glass large as a man is tall float. \nYou can see something vaugly through them.");
     print("\nWhere do you want to go next? Say one of these choices:" +
-        "\n\tcult meeting"+"\n\tStorm"+"\n\tShip");
+        "\n\tCult Meeting"+"\n\tStorm"+"\n\tShip");
     
     function processInput(input){
         if (input.toLowerCase() === "cult meeting") {
@@ -98,7 +110,7 @@ function cult_meeting() {
     clear();
     print("\nYou are in cult meeting!");
     print("\nHooded figures huttle around a central ulter. One of them gestures at you and says,");
-    print("\nHey where you been, were doing it! Were gonna contact the them!");
+    print("\nHey where you been Riine, were doing it! Were gonna contact the them!");
     print("\nYou stare blankly at the hooded face hidden in shadows.");
     print("\nYou have the urge to move, something is eating at you. You see a shard of stained glass do you enter? Where do you want to go next? Say one of these choices:" +
         "\n\tVoid"+"\n\tEnd Times");
@@ -178,14 +190,15 @@ function Ship(){
 	print("\nYou are in the haul of a ship, the planks creek as the boat rocks gently in the waves.");
 	print("\nYou open a familiar door, it swings open revealing a neat desk.");
 	print("\nYou think that one of the papers is important, there is just something about it.");
-	print("\nAs you reach for it you feel an impending dread, fear takes over and turns inot panic. You flee the room.");
-	print("\nYou see a shard of glass with maybe something swimming behind it. Do you enter? Your options are:"+
+	print("\nAs you reach for it you feel an impending dread. you reed it.");
+	print("\nDear Riine, I have thought about your proposal, but I'm afraid I must decline me and Alie have plans for Jharida should he become a problem. I am however conserned, the results of your experiments on shalies were... disturbing. Don't think you can do whatever you wish, Jharida will be delt with, and if you become a problem so will you.");
+	print("\nOnce done reading you look at your options to continue:"+
 		"\n\tVoid"+"\n\tWater");
 	function processInput(input){
-		if(input.toLowerCase() === "void"){
-			Void();
-		}else if(input.toLowerCase() === "water"){
+		if(input.toLowerCase() === "water"){
 			Water();
+		}else if(input.toLowerCase() === "void"){
+			Void();
 		}else{
 			stayHere();
 			waitThenCall(Ship);
@@ -242,11 +255,7 @@ function eaten(){
 function beyond2(){
 	clear();
 	print("\nYour suddenly in back in the room. You painic looking around. Hide?");
-	while(input.toLowerCase() != "hide"){			/* timer keeps going need a way to stop it*/
-	setTimeout(() => {
-		room3();
-	},12*1000);
-	}
+	timer();
 	function processInput(input){
 		if(input.toLowerCase() === "hide"){
 			hide();
@@ -257,13 +266,16 @@ function beyond2(){
 	waitForInput(processInput);
 }
 function hide(){
+	for(let i = 0; i < timeoutIds.length; i++){
+                clearTimeout(timeoutIds[i]);
+        }
 	clear();
 	print("\nYou hide behind a tree. It protects you. The world blurs.");
 	print("\nNo, you blur, you fade, your sense of self disapears as you fade in infinity, you became, you aren't.");
 	setTimeout(() => {
 		clear();
 		print("\nYou won, right? You escsped.");
-	},10*1000);
+	},15*1000);
 }
 
 //finally, make sure you customize this to tell it what should happen at the
