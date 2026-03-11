@@ -271,11 +271,11 @@ function hide(){
         }
 	clear();
 	print("\nYou hide behind a tree. It protects you. The world blurs.");
-	print("\nNo, you blur, you fade, your sense of self disapears as you fade in infinity, you became, you aren't.");
+	print("\nNo, you blur, you fade, your sense of self disapears as you fade into infinity, you became, you aren't.");
 	setTimeout(() => {
 		clear();
 		print("\nYou won, right? You escsped.");
-	},15*1000);
+	},13*1000);
 }
 
 //finally, make sure you customize this to tell it what should happen at the
