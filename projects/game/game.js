@@ -43,7 +43,8 @@ function room3(){
 function beyond(){
 	clear();
 	print("\nYour in a wooden room, an old room, behind you is a door, beyond the door is a forest.");
-	print("\nVoice: You are something, then you will be nothing.");
+	print("\nVoice: Reeni where are you.");
+	print("\nThe voice gets closer.");
 	print("\nYou have two options,"
 		+"\n\tRun"+"\n\tDon't Run");
 	function processInput(input){
@@ -73,7 +74,7 @@ function room1(){
 }
 function room2(){
 	clear();
-	print("\nVoice: Rember.");
+	print("\nVoice: Reeni.");
 	function processInput(input){
 		if(input.toLowerCase() === ""){
 			Void();
@@ -110,7 +111,7 @@ function cult_meeting() {
     clear();
     print("\nYou are in cult meeting!");
     print("\nHooded figures huttle around a central ulter. One of them gestures at you and says,");
-    print("\nHey where you been Riine, were doing it! Were gonna contact the them!");
+    print("\nHey where you been Reeni, were doing it! Were gonna contact the them!");
     print("\nYou stare blankly at the hooded face hidden in shadows.");
     print("\nYou have the urge to move, something is eating at you. You see a shard of stained glass do you enter? Where do you want to go next? Say one of these choices:" +
         "\n\tVoid"+"\n\tEnd Times");
@@ -191,7 +192,7 @@ function Ship(){
 	print("\nYou open a familiar door, it swings open revealing a neat desk.");
 	print("\nYou think that one of the papers is important, there is just something about it.");
 	print("\nAs you reach for it you feel an impending dread. you reed it.");
-	print("\nDear Riine, I have thought about your proposal, but I'm afraid I must decline me and Alie have plans for Jharida should he become a problem. I am however conserned, the results of your experiments on shalies were... disturbing. Don't think you can do whatever you wish, Jharida will be delt with, and if you become a problem so will you.");
+	print("\nDear Reeni, I have thought about your proposal, but I'm afraid I must decline me and Alie have plans for Jharida should he become a problem. I am however conserned the results of his experiments on shalies were... disturbing, Jharida will be delt with, don't contact me again.");
 	print("\nOnce done reading you look at your options to continue:"+
 		"\n\tVoid"+"\n\tWater");
 	function processInput(input){
@@ -224,7 +225,7 @@ function Water(){
 }
 function Run(){
 	clear();
-	print("\nVoice: You are not, I am, you become, I become more.");
+	print("\nVoice: Wait!");
 	print("\nYou don't know where your going as you burst out the door.");
 	print("\nVoice: ....");
 	print("\nPress Enter");
@@ -239,15 +240,18 @@ function Run(){
 }
 function eaten(){
 	clear();
-	print("\nYou don't, you become");
+	print("\nVoice: There you are, we've been looking all over for you.");
+	print("\nReeni: ....");
+	print("\nYou recognize their face, they are Imarte.");
+	print("\nImarte: What? You look like you just saw a ghost. Come on the others are waiting.");
 	print("\nGame Over. Press enter to start again.");
 	function processInput(input){
                 if(input.toLowerCase() === ""){
                         clear();
-			start();
+			End();
                 }else{
                         clear();
-			start();
+			End();
                 }
         }
         waitForInput(processInput);
@@ -270,13 +274,33 @@ function hide(){
                 clearTimeout(timeoutIds[i]);
         }
 	clear();
-	print("\nYou hide behind a tree. It protects you. The world blurs.");
-	print("\nNo, you blur, you fade, your sense of self disapears as you fade into infinity, you became, you aren't.");
+	print("\nYou hide behind a tree. It protects you. You sink into the tree.");
+	print("\nYou try to scream, but you find yourself unable to move. As the tree swells you hear a voice. You finally remeber where you are, and why.");
+	print("\nVoice: IuH7gyug98Yh9YHjjh.");
+	print("\nYou can't make out the words, but you know what they are anyway.");
 	setTimeout(() => {
 		clear();
-		print("\nYou won, right? You escsped.");
+		print("\nYou died in a land of dead.");
 	},13*1000);
 }
+function End(){
+	clear();
+	print("\nImarte brings you to a campground, several people sit around a campfire. You reconize them all.");
+	print("\nYou forget where you are, or why.");
+	print("\nIn this horrifing false world you find peace. Forgeting the cost of staying.");
+	print("\nGame over");
+	function processInput(input){
+                if(input.toLowerCase() === ""){
+                        clear();
+                        start();
+                }else{
+                        clear();
+                        start();
+                }
+        }
+        waitForInput(processInput);
+}
+
 
 //finally, make sure you customize this to tell it what should happen at the
 //very start. For this simple example, any input will bring you
