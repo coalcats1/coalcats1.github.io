@@ -150,7 +150,7 @@ function End_Times(){
 }
 function storm(){
 	clear();
-	print("\nYou're on a hill, a massive thunder strom covers the shy over head.");
+	print("\nYou're on a hill, a massive thunder strom covers the sky over head.");
 	print("\nYou turn around trying to find your barings. You see someone in the distance running and waving at you.");
 	print("\nLightning splits the sky overhead, you don't notice your temporary hearing loss. The lightning alluminated something in the ground, a glass shard");
 	print("\nYou need to get moving, something is happening, but you can't put your finger on it. Where to next?" +
@@ -171,7 +171,7 @@ function sorrow(){
 	clear();
 	print("\nYou look over a perfectly still lake, you wade into the water, only to find that it is too smooth.");
 	print("\nSomething bubles up inside you an immense regret.");
-	print("\nA large disk rests in the liquide, you need to go, keep moving. There is nothing here for you, not anymore.");
+	print("\nA large disk rests in the liquid, you need to go, keep moving. There is nothing here for you, not anymore.");
 	print("\nWhere do you go now?" + 
 		"\n\tVoid"+"\n\tStorm");
 	function processInput(input){
