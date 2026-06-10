@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title>Homepage</title>
+<style>
+#canvas{
+	background-color: green;
+}
+.grid {
+	display: grid;
+	height: 100vh;
+	grid: 
+		'sideA head sideB' 100px
+		'imageA stuff imageB' 500px
+		'footA foot foot' 200px
+		/400px 1fr 200px;
+	gap:10px
+}
+
+#sideAp{
+	grid-area: imageA;
+}
+#sideAp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#sideAb{
+	grid-area:footA;
+	overflow: hidden;
+}
+#text{
+	transform: translateY(620px) translateX(-370px);
+}
+</style>
+	</head>
+	<body>
+		<div class="grid">
+			<div id="stuff">
+				<canvas width="1375" height="800" id="canvas"></canvas>
+				<script src="java.js"></script>
+			</div>
+			<div id="sideAp">
+				<img src="images/Yellowstone.png" alt="Water fall">	
+			</div>
+			<div id="footAb">
+				<p id="text">This is an image I took at Yellowstone National Park.<br> If you wish to see my other photos please click the link <br> provided.</p>
+			</div>
+		</div>
+	</body>
+</html>
+
