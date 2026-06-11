@@ -3,20 +3,25 @@
 	<head> 
 		<title>Homepage</title>
 <style>
-#canvas{
-	background-color: green;
+#b1{
+        transform: translateX(20px) translateY(20px);
 }
+#b2{
+        transform: translateX(50px) translateY(20px);
+}       
+#b3{ 
+        transform: translateX(80px) translateY(20px);
+}       
 .grid {
-	display: grid;
-	height: 100vh;
-	grid: 
-		'sideA head sideB' 100px
-		'imageA stuff imageB' 500px
-		'footA foot foot' 200px
-		/400px 1fr 200px;
-	gap:10px
+        display: grid;
+        height: 100vh;
+        grid:
+                'sideA head sideB' 100px
+                'imageA stuff imageB' 500px
+                'footA foot footB' 200px
+                /400px 1fr 200px;
+        gap:10px
 }
-
 #sideAp{
 	grid-area: imageA;
 }
@@ -30,21 +35,35 @@
 	overflow: hidden;
 }
 #text{
-	transform: translateY(620px) translateX(-370px);
+	transform: translateY(620px) translateX(-405px);
+}
+#stuffs{
+	grid-area: stuff;
+        background-color: rgb(0,105,250);
+}
+#sideA{
+	grid-area: sideA;
+	background-color: rgb(205,0,70);
 }
 </style>
 	</head>
 	<body>
 		<div class="grid">
-			<div id="stuff">
-				<canvas width="1375" height="800" id="canvas"></canvas>
-				<script src="java.js"></script>
+			<div id="stuffs">
 			</div>
 			<div id="sideAp">
 				<img src="images/Yellowstone.png" alt="Water fall">	
 			</div>
 			<div id="footAb">
 				<p id="text">This is an image I took at Yellowstone National Park.<br> If you wish to see my other photos please click the link <br> provided.</p>
+			</div>
+			<div id="sideA">
+				<a href="portfolio/index.html" target="_blank">
+					<button id="b1">Homepage</button></a>
+				<a href="portfolio/aboutme.html" target="_blank">
+                                        <button id="b2">About Me</button></a>
+				<a href="portfolio/hobbies.html" target="_blank">
+                                        <button id="b3">Hobbies</button></a>
 			</div>
 		</div>
 	</body>

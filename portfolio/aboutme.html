@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+        <head> 
+		<title>About Me</title>
+<style>
+#b1{
+        transform: translateX(20px) translateY(20px);
+}
+#b2{
+        transform: translateX(50px) translateY(20px);
+}       
+#b3{ 
+        transform: translateX(80px) translateY(20px);
+}       
+.grid {
+        display: grid;
+        height: 100vh;
+        grid:
+                'sideA head sideB' 100px
+                'imageA stuff imageB' 500px
+                'footA foot footB' 200px
+                /400px 1fr 200px;
+        gap:10px
+}
+#sideAp{
+        grid-area: imageA;
+}
+#sideAp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#sideAb{
+        grid-area:footA;
+        overflow: hidden;
+}
+#text{
+        transform: translateY(620px) translateX(-405px);
+}
+#stuff{
+        grid-area: stuff;
+        background-color: rgb(0,105,250);
+}
+#sideA{
+        grid-area: sideA;
+        background-color: rgb(205,0,70);
+}
+</style>
+        </head>
+        <body>
+                <div class="grid">
+                        <div id="stuff">
+                        </div>
+                        <div id="sideAp">
+                                <img src="images/Myself.png" alt="me">     
+                        </div>
+                        <div id="footAb">
+                                <p id="text">This is a picture of me I took while working on this protfolio.<br> If you wish to see my photo librariy please click the link <br> provided.</p>
+                        </div>
+                 	<div id="sideA">
+                                <a href="portfolio/index.html" target="_blank">
+                                        <button id="b1">Homepage</button></a>
+                                <a href="portfolio/aboutme.html" target="_blank">
+                                        <button id="b2">About Me</button></a>
+                                <a href="portfolio/hobbies.html" target="_blank">
+                                        <button id="b3">Hobbies</button></a>
+                        </div>
+		</div>
+        </body>
+
+</html>

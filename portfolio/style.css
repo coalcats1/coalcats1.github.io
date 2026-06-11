@@ -1,0 +1,9 @@
+#b1{
+        transform: translateX(20px) translateY(20px);
+}
+#b2{
+        transform: translateX(50px) translateY(20px);
+}
+#b3{
+	transform: translateX(80px) translateY(20px);
+}
