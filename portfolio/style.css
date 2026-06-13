@@ -1,9 +1,65 @@
-#b1{
-        transform: translateX(20px) translateY(20px);
+#b1 {
+    transform: translateX(20px) translateY(20px);
 }
-#b2{
-        transform: translateX(50px) translateY(20px);
+
+#b2 {
+    transform: translateX(50px) translateY(20px);
 }
-#b3{
-	transform: translateX(80px) translateY(20px);
+
+#b3 {
+    transform: translateX(80px) translateY(20px);
 }
+
+.grid {
+    display: grid;
+    height: 100vh;
+    grid:
+        'sideA head sideB' 100px
+        'imageA stuff imageB' 500px
+        'footA foot footB' 200px
+        / 400px 1fr 200px;
+    gap: 10px;
+}
+
+#sideAp {
+    grid-area: imageA;
+}
+
+#sideAp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Image path here */
+}
+
+#sideAb {
+    grid-area: footA;
+    overflow: hidden;
+}
+
+#text {
+    transform: translateY(620px) translateX(-405px);
+}
+
+#stuffs,
+#stuff {
+    grid-area: stuff;
+    background-color: rgb(0, 105, 250);
+}
+
+#sideA {
+    grid-area: sideA;
+    background-color: rgb(205, 0, 70);
+}
+
+#sideBp {
+    grid-area: imageB;
+}
+
+#sideBp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Image path here */
+}
+

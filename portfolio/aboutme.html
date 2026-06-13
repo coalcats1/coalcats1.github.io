@@ -1,7 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
-        <head> 
+	<head> 
 		<title>About Me</title>
 <style>
 #b1{
@@ -24,7 +23,7 @@
         gap:10px
 }
 #sideAp{
-        grid-area: imageA;
+	grid-area: imageA;
 }
 #sideAp img {
     width: 100%;
@@ -32,42 +31,44 @@
     object-fit: cover;
 }
 #sideAb{
-        grid-area:footA;
-        overflow: hidden;
+	grid-area:footA;
+	overflow: hidden;
+	background-color: rgb(250,250,250,.75);
 }
 #text{
-        transform: translateY(620px) translateX(-405px);
+	transform: translateY(0px) translateX(10px);
 }
-#stuff{
-        grid-area: stuff;
-        background-color: rgb(0,105,250);
+#stuffs{
+	grid-area: stuff;
+        background-color: rgb(250,250,250,0.75);
 }
 #sideA{
-        grid-area: sideA;
-        background-color: rgb(205,0,70);
+	grid-area: sideA;
+}
+#body{
+	background-image: url("images/grand-tetons.png");
 }
 </style>
-        </head>
-        <body>
-                <div class="grid">
-                        <div id="stuff">
-                        </div>
-                        <div id="sideAp">
-                                <img src="images/Myself.png" alt="me">     
-                        </div>
-                        <div id="footAb">
-                                <p id="text">This is a picture of me I took while working on this protfolio.<br> If you wish to see my photo librariy please click the link <br> provided.</p>
-                        </div>
-                 	<div id="sideA">
-                                <a href="https://coalcats1.github.io/portfolio/index.html" target="_blank">
-                                        <button id="b1">Homepage</button></a>
-                                <a href="coalcats1.github.io/portfolio
-/aboutme.html" target="_blank">
+	</head>
+	<body id="body">
+		<div class="grid">
+			<div id="stuffs">
+			</div>
+			<div id="sideAp">
+				<img src="images/Yellowstone.png" alt="Water fall">	
+			</div>
+			<div id="sideAb">
+				<p id="text">This is an image I took at Yellowstone National Park.<br> If you wish to see my other photos please click the link <br> provided.</p>
+			</div>
+			<div id="sideA">
+				<a href="https://coalcats1.github.io/portfolio/index.html" target="self">
+					<button id="b1">Homepage</button></a>
+				<a href="https://coalcats1.github.io/portfolio/aboutme.html" target="self">
                                         <button id="b2">About Me</button></a>
-                                <a href="portfolio/hobbies.html" target="_blank">
+				<a href="https://coalcats1.github.io/portfolio/hobbies.html" target="self">
                                         <button id="b3">Hobbies</button></a>
-                        </div>
+			</div>
 		</div>
-        </body>
-
+	</body>
 </html>
+
